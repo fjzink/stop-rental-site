@@ -20,11 +20,11 @@ export default function Home() {
       <main className="max-w-screen-lg mx-4 sm:mx-auto font-sans">
         <Section title="What is it?">
           <P>
-            The owners of 4367 Edinburg Ct are trying to get a permit to allow
-            them to rent out the house unhosted through sites like Airbnb. They
-            have been doing this for some time already without getting a permit
-            for it, and after receiving some complaints they are now trying to
-            get a permit.
+            The owners of 4367 Edinburg Ct in the Green Valley Highlands are
+            trying to get a permit to allow them to rent out the house unhosted
+            through sites like Airbnb. They have been doing this for some time
+            already without getting a permit for it, and after receiving some
+            complaints they are now trying to get a permit.
           </P>
           <P>
             We would like to stop this permit because an unhosted rental permit
