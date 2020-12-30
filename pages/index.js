@@ -1,65 +1,72 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Section from "../components/Section";
+import P from "../components/SectionP";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <header className="flex justify-center bg-green-100 p-4 border-b-2 border-green-400">
+        <h1 className="sm:text-3xl text-2xl text-center divide-y">
+          Stop the Edinburg Unhosted Rental
         </h1>
+      </header>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
+      <main className="max-w-screen-lg mx-4 sm:mx-auto font-sans">
+        <Section title="What is it?">
+          <P>
+            The owners of 4367 Edinburg Ct are trying to get a permit to allow
+            them to rent out the house unhosted through sites like Airbnb. They
+            have been doing this for some time already without getting a permit
+            for it, and after receiving some complaints they are now trying to
+            get a permit.
+          </P>
+          <P>
+            We would like to stop this permit because an unhosted rental permit
+            means that strangers will be coming in and out of the neighborhood
+            unsupervised by the owners. This means people using the house to
+            party, making noise, and generally disrupting the neighborhood. This
+            is a quiet residential area, not someone's tourist destination.
+          </P>
+        </Section>
+        <Section title="How can you voice your opinion?">
+          <P>
+            The county is holding a hearing where members of the public can
+            voice their opinions and concerns. You will not be able to attend
+            the hearing in person due to the pandemic, so you can call in to the
+            hearing live, send an email, or send a letter.
+          </P>
+          <P>
+            Call: <span className="font-bold">1-415-655-0001</span> and use
+            access code <span className="font-bold">177 318 0273</span>
+          </P>
+          <P>
+            Email:{" "}
+            <span className="font-bold">jbharrison@solanocounty.com</span>
+          </P>
+          <P>
+            Mail: Resource Management, Planning Commision 675 Texas Street,
+            Suite 5500, Fairfield, CA 94533
+          </P>
+        </Section>
+        <Section title="When is it?">
+          <P>January 7, 2021 at 7:00 p.m.</P>
+        </Section>
+        <footer className="flex justify-center">
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+            className="text-xl p-2 my-4 text-green-600 hover:text-green-800 border rounded border-green-600 hover:border-green-800"
+            href="/edinburg_rental_hearing.pdf"
+            download
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            Download the letter ↓
           </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        </footer>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
-  )
+  );
 }
