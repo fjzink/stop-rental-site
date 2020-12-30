@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Create Next App</title>
+        <title>Stop Edinburg Unhosted Rental</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -67,7 +67,7 @@ export default function Home() {
             href="/edinburg_rental_hearing.pdf"
             download
           >
-            Download the letter ↓
+            View the Notice of Public Hearing
           </a>
         </footer>
       </main>
