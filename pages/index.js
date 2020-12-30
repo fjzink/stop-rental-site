@@ -50,8 +50,12 @@ export default function Home() {
             <span className="font-bold">jbharrison@solanocounty.com</span>
           </P>
           <P>
-            Mail: Resource Management, Planning Commision 675 Texas Street,
-            Suite 5500, Fairfield, CA 94533
+            Mail:
+            <address className="flex flex-col justify-start sm:ml-8">
+              <span>Resource Management, Planning Commision</span>
+              <span>675 Texas Street, Suite 5500</span>
+              <span>Fairfield, CA 94533</span>
+            </address>
           </P>
         </Section>
         <Section title="When is it?">
